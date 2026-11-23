@@ -1,13 +1,13 @@
 [project]
-name = "agent-bridge-mcp"
-version = "0.2.0"
-description = "MCP server that lets one AI coding agent drive another: Claude Code and Codex desktop chats talk to each other on Windows."
+name = "codex-desktop-bridge"
+version = "0.3.0"
+description = "Background Windows Codex Desktop inspection and guarded chat navigation."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Marchellino Ghorayeb" }]
 requires-python = ">=3.11"
-dependencies = ["mcp>=2.3,<3", "uiautomation>=2.0.29; sys_platform == 'win32'", "psutil>=7", "anyio>=4"]
+dependencies = ["mcp==1.30.0"]
 keywords = ["mcp", "model-context-protocol", "claude-code", "codex", "multi-agent", "agent-to-agent", "ui-automation", "windows"]
 classifiers = [
     "Operating System :: Microsoft :: Windows",
@@ -17,15 +17,15 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/EngMarchG/agent-bridge"
-Issues = "https://github.com/EngMarchG/agent-bridge/issues"
+Homepage = "https://github.com/HoppeStudios/codex-desktop-bridge"
+Issues = "https://github.com/HoppeStudios/codex-desktop-bridge/issues"
 
 [project.scripts]
-agent-bridge-mcp = "agent_bridge:main"
+codex-desktop-bridge = "agent_bridge:main"
 
 [build-system]
-requires = ["setuptools>=77"]
+requires = ["setuptools==84.2.1"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-py-modules = ["agent_bridge"]
+py-modules = ["agent_bridge", "transcripts"]

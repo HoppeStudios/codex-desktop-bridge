@@ -1,15 +1,12 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
-  "name": "io.github.EngMarchG/agent-bridge",
-  "description": "Windows only: let Claude and Codex steer each other's desktop chats via UI Automation.",
-  "repository": { "url": "https://github.com/EngMarchG/agent-bridge", "source": "github" },
-  "version": "0.2.0",
-  "packages": [
-    {
-      "registryType": "pypi",
-      "identifier": "agent-bridge-mcp",
-      "version": "0.2.0",
-      "transport": { "type": "stdio" }
-    }
-  ]
+  "name": "codex-desktop-bridge",
+  "version": "0.3.0",
+  "description": "Local background Codex Desktop profile. Install from reviewed source, not an upstream PyPI package.",
+  "repository": {
+    "url": "https://github.com/HoppeStudios/codex-desktop-bridge",
+    "source": "github"
+  },
+  "transport": {
+    "type": "stdio"
+  }
 }
